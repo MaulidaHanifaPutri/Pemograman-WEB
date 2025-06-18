@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail Buku: Timun Mas</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: beige;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 960px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 40px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+            border-radius: 12px;
+        }
+        .detail-buku {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: flex-start;
+        }
+        .detail-buku img {
+            width: 280px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .info-buku {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .info-buku .label {
+            font-weight: 600;
+            color: #374151;
+        }
+        .info-buku div {
+            font-size: 16px;
+            color: #444;
+        }
+        .harga {
+            font-size: 22px;
+            color: #b91c1c;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        .tombol-beli {
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: tan;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: fit-content;
+            transition: background-color 0.3s ease;
+        }
+        .tombol-beli:hover {
+            background-color: red;
+        }
+        .sinopsis {
+            margin-top: 50px;
+        }
+        .sinopsis h3 {
+            margin-bottom: 12px;
+            color: #1f2937;
+            font-size: 22px;
+        }
+        .sinopsis p {
+            line-height: 1.8;
+            font-size: 16px;
+            color: #333;
+            text-align: justify;
+        }
+        @media (max-width: 768px) {
+            .detail-buku {
+                flex-direction: column;
+                align-items: center;
+            }
+            .detail-buku img {
+                width: 100%;
+                max-width: 300px;
+            }
+            .info-buku {
+                align-items: center;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="detail-buku">
+            <img src="tm.jpg" alt="Timun Mas">
+            <div class="info-buku">
+                <div><span class="label">Judul:</span> Timun Mas</div>
+                <div><span class="label">Pengarang:</span> Cerita Rakyat Jawa Tengah</div>
+                <div><span class="label">Penerbit:</span> Cerita Anak Indonesia</div>
+                <div><span class="label">Jumlah Halaman:</span> 22 halaman</div>
+                <div class="harga">Rp36.000</div>
+                <button class="tombol-beli">Beli Sekarang</button>
+            </div>
+        </div>
+        <div class="sinopsis">
+            <h3>Sinopsis</h3>
+            <p><em>Timun Mas</em> menceritakan seorang gadis pemberani yang harus melarikan diri dari raksasa jahat yang ingin memakannya. Dengan bantuan benda-benda ajaib dari seorang petapa, Timun Mas berjuang untuk menyelamatkan diri.</p>
+            <p>Dongeng ini mengajarkan anak-anak tentang keberanian, kecerdikan, dan pentingnya menjaga janji serta tidak mudah menyerah dalam menghadapi bahaya.</p>
+        </div>
+    </div>
+</body>
+</html>

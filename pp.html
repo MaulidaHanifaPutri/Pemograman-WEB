@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail Buku: Pulang Pergi</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: beige;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 40px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+            border-radius: 12px;
+        }
+
+        .detail-buku {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: flex-start;
+        }
+
+        .detail-buku img {
+            width: 280px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .info-buku {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .info-buku .label {
+            font-weight: 600;
+            color: #374151;
+            margin-right: 5px;
+        }
+
+        .info-buku div {
+            font-size: 16px;
+            color: #444;
+        }
+
+        .harga {
+            font-size: 22px;
+            color: #b91c1c;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .tombol-beli {
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: #0b3d20;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: fit-content;
+            transition: background-color 0.3s ease;
+        }
+
+        .tombol-beli:hover {
+            background-color: #0b3d20;
+        }
+
+        .sinopsis {
+            margin-top: 50px;
+        }
+
+        .sinopsis h3 {
+            margin-bottom: 12px;
+            color: #1f2937;
+            font-size: 22px;
+        }
+
+        .sinopsis p {
+            line-height: 1.8;
+            font-size: 16px;
+            color: #333;
+            text-align: justify;
+        }
+
+        @media (max-width: 768px) {
+            .detail-buku {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .detail-buku img {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .info-buku {
+                align-items: center;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="detail-buku">
+            <img src="pp.jpg" alt="Pulang Pergi">
+            <div class="info-buku">
+                <div><span class="label">Judul:</span> Pulang Pergi</div>
+                <div><span class="label">Pengarang:</span> Tere Liye</div>
+                <div><span class="label">Penerbit:</span> Republika Penerbit</div>
+                <div><span class="label">Jumlah Halaman:</span> 368 halaman</div>
+                <div class="harga">Rp88.000</div>
+                <button class="tombol-beli">Beli Sekarang</button>
+            </div>
+        </div>
+
+        <div class="sinopsis">
+            <h3>Sinopsis</h3>
+            <p><em>Pulang Pergi</em> adalah kelanjutan dari kisah seorang agen rahasia bernama Bujang, yang kembali berpetualang dalam dunia kriminal internasional. Dalam novel ini, Bujang menghadapi misi yang menegangkan dan penuh rahasia, berkeliling dari satu tempat ke tempat lain untuk mencari keadilan dan jawaban.</p>
+            <p>Cerita ini mengungkap sisi emosional dari tokoh utama, mengombinasikan aksi, drama, dan makna keluarga yang mendalam, serta mempertanyakan arti 'pulang' yang sesungguhnya.</p>
+        </div>
+    </div>
+</body>
+</html>
